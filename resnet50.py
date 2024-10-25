@@ -44,7 +44,7 @@ class BasicBlock(nn.Module):
 
 # resnet50只用了这种残差块
 '''
-残差块只有第一个卷积层的步长用形参stride来传，默认传2，其余地方写固定步长1。
+残差块只有第一个卷积层的步长用形参stride来传，其余地方写固定步长1。
 实际上只有在每个layer的第一个卷积层里需要降尺寸。
 '''
 class bottleneck(nn.Module):
